@@ -4,15 +4,22 @@
 body {
   background-color: #f7f7f7;
   padding: 15px;
+  font-family: "Inter", sans-serif;
 }
 .page-wrapper {
   max-width: 375px;
   margin: 0 auto;
   box-shadow: 0 3px 30px rgba(58, 57, 57, 0.25);
   background: #f7f7f7;
-  border-radius: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.container {
+  max-width: 300px;
+  margin: auto;
 }
 .header {
+  color: #fff;
   padding: 38px 39px 125px;
   border-radius: 0px 0px 40px 40px;
   background: linear-gradient(
@@ -20,5 +27,42 @@ body {
       rgba(14, 14, 14, 0.3),
       rgba(14, 14, 14, 0.3)
     ),
-    url("../img/image.png");
+    url("../img/image.png") no-repeat center / cover;
+}
+.hello {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.hello-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.user {
+  margin-top: -79px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+.user-avater {
+  margin-top: -43px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user-name {
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.user-description {
+  margin-top: 4px;
+  color: #6e6d6d;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
 }
